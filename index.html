@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartAMR: AI-Driven Microbial Resistance Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>SmartAMR</h1>
+        <nav>
+            <ul>
+                <li><a href="#heatmap">AMR Tracker</a></li>
+                <li><a href="#education">Education Hub</a></li>
+                <li><a href="#submit">Report Usage</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="heatmap">
+        <h2>AMR Tracker: Real-Time Data</h2>
+        <div id="map-container">
+            <!-- Placeholder for Heatmap visualization (can be replaced with real data later) -->
+            <canvas id="heatmapCanvas"></canvas>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Learn about AMR</h2>
+        <p>Antimicrobial resistance (AMR) is one of the biggest global health threats. Click below to learn more about how AMR works and what you can do to help prevent it.</p>
+        <button onclick="window.location.href='https://www.who.int/news-room/fact-sheets/detail/antimicrobial-resistance'">Learn More</button>
+    </section>
+
+    <section id="submit">
+        <h2>Submit Antibiotic Usage Data</h2>
+        <form id="usage-form">
+            <label for="antibiotic">Which antibiotic was prescribed?</label>
+            <input type="text" id="antibiotic" name="antibiotic" required>
+
+            <label for="duration">How long was the antibiotic taken?</label>
+            <input type="number" id="duration" name="duration" required>
+
+            <label for="symptoms">What symptoms were treated?</label>
+            <textarea id="symptoms" name="symptoms" required></textarea>
+
+            <button type="submit">Submit Report</button>
+        </form>
+        <div id="responseMessage"></div>
+    </section>
+
+    <footer>
+        <p>SmartAMR - AI-Powered Antimicrobial Resistance Tracker</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
